@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Store</title>
+    <link rel="stylesheet" href="moviestyles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Entertainment Store</h1>
+        <div class="buttons">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showRegister()">Register</button>
+        </div>
+    </header>
+
+    <section id="poster-section">
+        <h2>Popular Picks</h2>
+        <div class="poster-grid">
+            <div class="poster">
+                <img src="https://via.placeholder.com/200x300?text=Movie+Poster" alt="Movie">
+                <p>Movie</p>
+            </div>
+            <div class="poster">
+                <img src="https://via.placeholder.com/200x300?text=TV+Show+Poster" alt="TV Show">
+                <p>TV Show</p>
+            </div>
+            <div class="poster">
+                <img src="https://via.placeholder.com/200x300?text=Web+Series+Poster" alt="Web Series">
+                <p>Web Series</p>
+            </div>
+            <div class="poster">
+                <img src="https://via.placeholder.com/200x300?text=Cartoon+Poster" alt="Cartoon">
+                <p>Cartoon</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="login-section" style="display:none;">
+        <h2>Login</h2>
+        <form onsubmit="return handleLogin()">
+            <label for="userID">User ID:</label>
+            <input type="text" id="userID" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="register-section" style="display:none;">
+        <h2>Register Here</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <label for="password-reg">Password:</label>
+            <input type="password" id="password-reg" required><br>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="catalog-section" style="display:none;">
+        <h2>Available for Rent</h2>
+        <div class="catalog-grid">
+            <div class="item">
+                <h3>Inception (Movie)</h3>
+                <p>Genre: Sci-Fi</p>
+                <p>Rating: 8.8/10</p>
+                <p>Price: $5</p>
+                <button>Rent Now</button>
+            </div>
+            <div class="item">
+                <h3>Friends (TV Show)</h3>
+                <p>Genre: Comedy</p>
+                <p>Rating: 8.9/10</p>
+                <p>Price: $3</p>
+                <button>Rent Now</button>
+            </div>
+            <div class="item">
+                <h3>The Witcher (Web Series)</h3>
+                <p>Genre: Fantasy</p>
+                <p>Rating: 8.2/10</p>
+                <p>Price: $6</p>
+                <button>Rent Now</button>
+            </div>
+            <div class="item">
+                <h3>SpongeBob SquarePants (Cartoon)</h3>
+                <p>Genre: Animation</p> 
+                <p>Rating: 8.1/10</p>
+                <p>Price: $2</p>
+                <button>Rent Now</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

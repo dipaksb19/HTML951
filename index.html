@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <style>
+        
+        #male {
+            color: blue;
+        }
+
+        #female {
+            color:rgb(230, 24, 223);
+        }
+
+        
+    </style>
+    
+</head>
+<body >
+    <form action="php">
+        <input placeholder="Enter Username" name="Username"><br><br>
+        <input type="password" placeholder="Enter Password" name="Password"><br><br>
+        <input type="number" placeholder="Enter Mobile number" name="Mob number"><br><br> 
+        <input type="radio" value="Male" name="gender"><span id="male">Male</span>
+        <input type="radio" value="Female"name="gender"><span id="female">Female</span><br><br>
+
+        <select>
+            <option value="10">IT</option>
+            <option value="20">Sales</option>
+            <option value="30">Finance</option>
+        </select><br><br>
+
+        <input type="checkbox">I know Java<br>
+        <input type="checkbox">I know Python<br>
+        <input type="checkbox">I know CPP<br>
+
+        <input type="date"><br>
+
+        <input type="email"><br><br>
+        
+        <input type="submit" value="submit" formaction="processData">
+    </form>
+</body>
+</html>
+
+

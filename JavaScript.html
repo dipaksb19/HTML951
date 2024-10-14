@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+        function display()
+        {
+            console.log("TKA");
+            console.log("JBK");
+        }
+        display();
+
+        setInterval(display, 3000)
+
+        var names = ["Nashik", "Pune", "Nagpur"]
+
+        for(var index = (names.length) - 1; index >= 0; index--){
+            var element = names[index];
+            console.log("City is " + element)
+        }
+
+
+        var allimages = ["parrot.jpg", "google.jpg", "tiger.jpg"];
+        var index = 0;
+
+        function changeImage(){
+            var image = document.getElementById("i1")
+            index = index + 1
+            if(index==allimages.length){
+                index = 0;
+            }
+
+            image.src=allimages[index]
+        }
+        setInterval(changeImage, 1000)  
+
+        array = ["Dipak", "Milind", "Mayur", "Suraj", "Maitreya"]
+        for(var i = 0; i<array.length; i++){
+            console.log("Name : " + array[i])
+        }
+   </script>
+</head>
+<body>
+    
+    <img src="parrot.jpg" width="500" height="500" id="i1">
+    
+</body>
+</html>

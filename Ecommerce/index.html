@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <!-- <img class="logo" src="Logo.png" alt="abc"> -->
+                 <h1>Entertainment</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trending</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                </div>
+                <div class="toggle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <img src="search.png" class="left-menu-icon" alt="img">
+        <img src="home.png" class="left-menu-icon" alt="img">
+        <img src="user.png" class="left-menu-icon" alt="img">
+        <img src="bookmark.png" class="left-menu-icon" alt="img">
+        <img src="Television.png" class="left-menu-icon" alt="img">
+        <img src="hour.png" class="left-menu-icon" alt="img">
+        <img src="store.png" class="left-menu-icon" alt="img">
+    </div>
+
+    <center>
+        <img src="RRR.jpg" id="pic" alt="abc">
+        <button type="button" onclick="Preimg()">Pre</button>
+        <button type="button" onclick="Changeimg()">Next</button>
+    </center>
+    <!-- <div class="container">
+        <div class="content-container">
+            <div class="featured-content">
+                <img class="imglog" src="entertainment.png" alt="abc">
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+    <div class="search-container">
+        <form action="/search" method="GET">
+            <input type="text" placeholder="Search..." name="query" class="search-bar">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+
+    <div class="movie-list-container">
+        <h1 class="movie-list-title"> New Releases</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-image" src="RRR.jpg" alt="">
+                    <span class="movie-list-item-title">RRR</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nulla adipisci est, placeat quibusdam consequuntur atque odit quis in consectetur ullam quidem inventore doloribus facere laudantium. Delectus eveniet nulla accusamus!</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-image" src="singham.jpeg" alt="">
+                    <span class="movie-list-item-title">Singham Again</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nulla adipisci est, placeat quibusdam consequuntur atque odit quis in consectetur ullam quidem inventore doloribus facere laudantium. Delectus eveniet nulla accusamus!</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-image" src="devara.jpg" alt="">
+                    <span class="movie-list-item-title">Devara</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nulla adipisci est, placeat quibusdam consequuntur atque odit quis in consectetur ullam quidem inventore doloribus facere laudantium. Delectus eveniet nulla accusamus!</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-image" src="pushpa.jpeg" alt="">
+                    <span class="movie-list-item-title">Pushpa The Rule</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nulla adipisci est, placeat quibusdam consequuntur atque odit quis in consectetur ullam quidem inventore doloribus facere laudantium. Delectus eveniet nulla accusamus!</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
